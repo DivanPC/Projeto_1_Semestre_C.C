@@ -38,6 +38,36 @@ body{
     border-radius: 20px;
 }
 
+.wrraper{
+    background-color: orangered;
+}
+
+.main__title{
+    text-align: center;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.main__subtitle{
+    text-align: center;
+    padding: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.content p{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.content ul{
+    list-style: none;
+    padding: 0;
+}
+
 
 /*usado para remover o menu mobile*/
 @media screen and (min-width:750px){
