@@ -1,0 +1,48 @@
+/* Estilos para a linha do tempo */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #5f1818;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.timeline-item.left {
+    justify-content: flex-end;
+}
+
+.timeline-item.right {
+    justify-content: flex-start;
+}
+
+.timeline-content {
+    max-width: 300px;
+    background-color: #d8d7d7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(234, 5, 5, 0.747);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #c20606;
+}
+
+.timeline-content p {
+    color: #000000;
+}
