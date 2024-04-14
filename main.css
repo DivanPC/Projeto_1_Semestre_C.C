@@ -4,8 +4,22 @@
     box-sizing: border-box;
 }
 
-body{
+body,html{
     min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* scroollbar personaizada*/
+::-webkit-scrollbar{
+    background-color: #1d1d1d;
+    width: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #f08109;
+    border-radius: 5px;
 }
 
 .header{
@@ -39,7 +53,8 @@ body{
 }
 
 .wrraper{
-    background-color: orangered;
+    background: rgb(255,140,0);
+    background: linear-gradient(16deg, rgba(255,140,0,1) 21%, rgba(255,0,0,1) 92%);
 }
 
 .main__title{
@@ -56,6 +71,9 @@ body{
     color: #fff;
 }
 
+.content{
+    padding: 1rem;
+}
 .content p{
     font-size: 25px;
     color: #fff;

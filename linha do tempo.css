@@ -46,3 +46,10 @@
 .timeline-content p {
     color: #000000;
 }
+
+.main__timeline__title{
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: orangered;
+}
