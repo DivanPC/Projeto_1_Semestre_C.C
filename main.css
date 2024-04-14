@@ -50,9 +50,9 @@ body,html{
 .header__nav a{
     text-decoration: none;
     text-transform: uppercase;
-    background-color: red;
+    background-color: rgb(255, 251, 251);
     padding: 1rem;
-    color: #fff;
+    color: rgba(255,0,0,1);
     border-radius: 20px;
 }
 
@@ -178,8 +178,8 @@ body,html{
    .header__nav__mob a{
     text-decoration: none;
     padding: 1.1rem;
-    background-color:red;
-    color: #fff;
+    background-color:rgb(255, 251, 251);
+    color: rgba(255,0,0,1);
     text-transform: uppercase;
     border-radius: 20px;
    }
