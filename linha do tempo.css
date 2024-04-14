@@ -1,4 +1,8 @@
 /* Estilos para a linha do tempo */
+body,html{
+    font-family: "Open Sans";
+}
+
 .timeline {
     position: relative;
     max-width: 800px;
@@ -52,4 +56,11 @@
     padding: 1rem;
     text-transform: uppercase;
     color: orangered;
+}
+
+@media screen and (max-width:750px){
+    .timeline-line {
+        display: none;
+    }
+    
 }
