@@ -160,7 +160,8 @@ body,html{
     display: flex;
     justify-content: space-around;
     padding: 1.5rem;
-    background-color: orange;
+    background: rgb(255,140,0);
+    background: linear-gradient(16deg, rgba(255,140,0,1) 21%, rgba(255,0,0,1) 92%);
     color: #fff;
    }
 
@@ -177,7 +178,7 @@ body,html{
    .header__nav__mob a{
     text-decoration: none;
     padding: 1.1rem;
-    background-color: red;
+    background-color:red;
     color: #fff;
     text-transform: uppercase;
     border-radius: 20px;
