@@ -103,6 +103,13 @@ body,html{
     padding: 1rem;
 }
 
+.main__pay__subtitle{
+    text-transform: uppercase;
+    font-size: 7px;
+    text-align: center;
+    color: orangered;
+}
+
 .main__pay{
     display: flex;
     justify-content: center;
@@ -123,6 +130,12 @@ body,html{
     font-size: 50px;
     padding: 1.5rem;
     color: orangered;
+
+}
+
+.icons a:hover{
+    color: #fff;
+    animation: 5s;
 }
 
 .icons__back{
@@ -191,6 +204,10 @@ body,html{
 
    .main__pay__title{
     font-size: 10px;
+   }
+
+   .main__pay__subtitle{
+    font-size: 6px;
    }
 
 
