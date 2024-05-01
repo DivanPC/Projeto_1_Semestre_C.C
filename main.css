@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding: 0;
@@ -8,7 +9,13 @@ body,html{
     /* min-height: 100vh; */
     scroll-behavior: smooth;
     font-family: "Open Sans";
-    
+
+}
+
+:root{
+    --primary-color:#fff;
+    --secondary-color:rgb(255, 251, 251);
+    --tertiary-color:rgb(255,140,0);
 }
 
 /* scroollbar personaizada*/
@@ -29,11 +36,11 @@ body,html{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background: rgb(255,140,0);
+    background:var(--tertiary-color);
     background: linear-gradient(16deg, rgba(255,140,0,1) 21%, rgba(255,0,0,1) 92%);
     padding: 1.7rem;
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 
@@ -51,7 +58,7 @@ body,html{
 .header__nav a:not(.whats){
     text-decoration: none;
     text-transform: uppercase;
-    background-color: rgb(255, 251, 251);
+    background-color: var(--secondary-color);
     padding: 1rem;
     color: rgba(255,0,0,1);
     border-radius: 20px;
@@ -60,9 +67,9 @@ body,html{
 .whats{
     font-size: 25px;
     padding: 0.50rem;
-    color: rgb(255, 251, 251);
-    background-color: rgb(255, 251, 251);
-    color: rgb(255,140,0);
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     border-radius: 100% ;
 }
 
@@ -75,7 +82,7 @@ body,html{
 }
 
 .wrraper{
-    background: rgb(255,140,0);
+    background: var(--tertiary-color);
     background: linear-gradient(16deg, rgba(255,140,0,1) 21%, rgba(255,0,0,1) 92%);
 }
 
@@ -83,14 +90,14 @@ body,html{
     text-align: center;
     padding: 1.5rem;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .main__subtitle{
     text-align: center;
     padding: 3rem;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .content{
@@ -98,7 +105,7 @@ body,html{
 }
 .content p{
     font-size: 25px;
-    color: #fff;
+    color: var(--primary-color);
     text-align: center;
     letter-spacing: 1px;
 }
@@ -149,7 +156,7 @@ body,html{
 }
 
 .icons a:hover{
-    color: #fff;
+    color: var(--primary-color);
     animation: 5s;
 }
 
@@ -160,16 +167,35 @@ body,html{
 
 .footer{
     padding: 2rem;
-    background: rgb(255,140,0);
+    background: var(--tertiary-color);
     background: linear-gradient(16deg, rgba(255,140,0,1) 21%, rgba(255,0,0,1) 92%);
 }
 
 .footer p{
-    color: #fff;
+    color: var(--primary-color);
     text-align: center;
     font-size: 20px;
 }
 
+
+.footer__icons_title{
+    color: var(--primary-color);
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+
+.footer__icons{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 300px;
+}
+
+.footer__icon{
+    font-size: 25px;
+    color: var(--secondary-color);
+    
+}
 
 
 /*usado para remover o menu mobile*/
@@ -190,9 +216,9 @@ body,html{
     display: flex;
     justify-content: space-around;
     padding: 1.5rem;
-    background: rgb(255,140,0);
+    background: var(--tertiary-color);
     background: linear-gradient(16deg, rgba(255,140,0,1) 21%, rgba(255,0,0,1) 92%);
-    color: #fff;
+    color: var(--primary-color);
    }
 
    .header__nav__mob ul{
@@ -208,7 +234,7 @@ body,html{
    .header__nav__mob a{
     text-decoration: none;
     padding: 1.1rem;
-    background-color:rgb(255, 251, 251);
+    background-color:var(--secondary-color);
     color: rgba(255,0,0,1);
     text-transform: uppercase;
     border-radius: 20px;
@@ -227,5 +253,39 @@ body,html{
     font-size: 6px;
    }
 
+   .footer__icons{
+    justify-content: center;
+   }
 
+   .footer__icons_title{
+    text-align: center;
+    font-size: 13px;
+   }
+   .row__icons{
+    display: flex;
+    justify-content: center;
+   }
+
+
+
+}
+
+@media screen and (max-width:320px){
+        
+   .header__nav__mob a{
+    text-decoration: none;
+    padding: 0.40rem;
+    background-color:var(--secondary-color);
+    color: rgba(255,0,0,1);
+    text-transform: uppercase;
+    border-radius: 20px;
+   }
+
+   .header__logo__mob{
+    font-size: 15px;
+   }
+
+   .footer__icons_title{
+    font-size: 12px;
+   }
 }
