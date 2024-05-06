@@ -302,7 +302,7 @@ body,html{
   }
   
   img {
-    vertical-align: middle;
+    vertical-align:auto;
     border-style: none;
   }
   
